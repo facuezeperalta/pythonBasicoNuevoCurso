@@ -31,6 +31,9 @@ class BankAccount:
     def activateAccount(self):
         self.is_active = True
         print("La cuenta ha sido activada correctamente.")
+    
+    def checkBalance(self):
+        print(f"El saldo actual de la cuenta es: ${self.balance}")
 
     
 
@@ -42,6 +45,9 @@ account2.deactivateAccount()
 account2.deposit(1500)
 account2.activateAccount()
 account2.deposit(10)
-
-
+account1.checkBalance()
+account1.withdraw(1500)
+account1.withdraw(1000)
+account1.checkBalance()
+account1.withdraw(1000)
 
