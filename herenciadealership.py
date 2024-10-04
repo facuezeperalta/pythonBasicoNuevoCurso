@@ -123,3 +123,4 @@ Shop.show_available_vehicles()
 
 #Cliente consulta.
 custumer1.buy_vehicle(bike1)
+custumer1.buy_vehicle(car1)
