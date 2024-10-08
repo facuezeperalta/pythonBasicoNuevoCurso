@@ -6,4 +6,6 @@ with open('products.json', mode='r') as file:
 
 # Mostrar el contenido del JSON
 for product in products:
-    print(product)
+    #print(product)
+    #imprimi nombre y precio del producto
+    print(f"Producto: {product['name']}, Price: {product['price']}")
