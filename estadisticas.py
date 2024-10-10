@@ -51,3 +51,5 @@ print(f"El máximo de ventas: {max_sales}")
 #Rango de las ventas
 range_sales = max_sales - min_sales
 print(f"El rango de ventas es: {range_sales}")
+
+
