@@ -15,3 +15,12 @@ print("Cuadrados: ",squared_numbers)
 #pares
 even_numbers = list(filter(lambda x: x%2 == 0, numbers))
 print("Numeros pares: ",even_numbers)
+
+#odd numbers
+
+odd_numbers = list(filter(lambda x: x % 2 != 0,numbers))
+print(f"Numeros impares: {odd_numbers}")
+
+# add one to the numbers 
+addOneToNumbers = list(filter(lambda x : x * 2 < 10,numbers))
+print(f"Números sumando 1: \n {addOneToNumbers}")
