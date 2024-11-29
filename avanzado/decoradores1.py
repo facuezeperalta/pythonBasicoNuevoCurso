@@ -1,16 +1,18 @@
+""" construyo el decorador """
 def log_transaction(func):
     def wrapper():
-        print('1 - Log de la transacción...')
-        func()
-        print('3 - Log terminado...')
+        print('1- Log de la transacción...')
+        """ llamo a la función que tengo como parámetro """
+        func() 
+        print('3- Log terminado...')
     return wrapper
+        
 
 
+""" hacemos uso del decorador """
+@log_transaction 
 
-
-@log_transaction #usamos el decorador.
 def process_payment():
-    print('Procesando pago...')
-
+    print('2- Procesando pago...')
 
 process_payment()
